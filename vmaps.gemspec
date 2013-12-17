@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Vmaps::VERSION
   spec.authors       = ["Mike Anderson"]
   spec.email         = ["athaeryn@me.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{List your vim mappings.}
+  spec.summary       = %q{This is a gem to list your vim mappings.}
+  # spec.homepage      = ""
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
