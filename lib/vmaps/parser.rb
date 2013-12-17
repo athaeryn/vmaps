@@ -20,8 +20,10 @@ module Vmaps
           parts = line[3..-1].split(' ')
 
           mapping.lhs = parts.shift
-          mapping.rhs = parts.pop
-          mapping.special = parts.join()
+          if parts.first.start_with?('*', '&', '@')
+            mapping.special = parts.shift
+          end
+          mapping.rhs = parts.join()
         end
       end
       return mappings
