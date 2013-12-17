@@ -3,3 +3,4 @@
 require "vmaps"
 
 vmaps = Vmaps::Main.new
+vmaps.output_json

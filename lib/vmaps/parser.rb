@@ -15,8 +15,8 @@ module Vmaps
           mappings << mapping
           mapping = Mapping.new
         else
-          mapping.mode = line[0..2]
-          mapping.mode = 'nvxso' if mapping.mode.strip.empty?
+          mapping.mode = line[0..2].strip
+          mapping.mode = 'nvxso' if mapping.mode.empty?
           parts = line[3..-1].split(' ')
 
           mapping.lhs = parts.shift
