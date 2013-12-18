@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env ruby
 
-tempfile=$(mktemp -t vmaps)
-vim +"redir! > $tempfile" +'silent! verbose map' +'redir END' +q >/dev/tty
-tail -n +3 "$tempfile"
-rm "$tempfile"
+tempfile = `mktemp -t vmaps`
+system "vim +'redir! > #{tempfile}' +'silent! verbose map' +'redir END' +q >/dev/tty"
+system "tail -n +3 #{tempfile}"
+system "rm #{tempfile}"
