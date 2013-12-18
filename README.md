@@ -6,8 +6,6 @@ This is a pair of tools for exploring your vim mappings:
 
 ## Installation
 
-Or install it yourself as: (this gem is not published yet so this won't work)
-
     $ gem install vmaps
 
 
