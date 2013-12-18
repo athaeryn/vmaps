@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tempfile=$(mktemp -t vmaps)
+vim +"redir! > $tempfile" +'silent! verbose map' +'redir END' +q >/dev/tty
+tail -n +3 "$tempfile"
+rm "$tempfile"

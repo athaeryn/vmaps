@@ -1,0 +1,330 @@
+n  <C-C>       * :!!<CR>
+   <C-E>       * 5<C-E>
+n  <C-H>       * <C-W>h
+n  <NL>        * <C-W>j
+n  <C-K>       * <C-W>k
+n  <C-L>       * <C-W>l
+n  <CR>        * :noh<CR>
+n  <C-N>       * :tabnext<CR>
+n  <C-O>       * o<Esc>0D
+n  <C-P>       * :<C-U>CtrlP<CR>
+   <C-Y>       * 5<C-Y>
+n  ,vy*          :call <SNR>92_ToggleFileAssociationsInExplorer()<CR>
+n  ,vy|          :call <SNR>92_EchoOptionsSet()<CR>
+n  ,vyv          :call <SNR>92_EchoGrepCommand()<CR>
+n  ,vy?          :call <SNR>92_ToggleOptionsDisplay()<CR>
+n  ,vym          :call <SNR>92_ToggleReplaceWindowMode()<CR>
+n  ,vys          :call <SNR>92_Sort()<CR>
+n  ,vye          :call <SNR>92_EchoFilesSearched()<CR>
+n  ,vy!          :call <SNR>92_ToggleWholeWord()<CR>
+n  ,vyp          :call <SNR>92_ToggleJumpToMatch()<CR>
+n  ,vyg          :call <SNR>92_ToggleEveryMatch()<CR>
+n  ,vyo          :call <SNR>92_ToggleOpenWindow()<CR>
+n  ,vyw          :call <SNR>92_ToggleWindow()<CR>
+n  ,vyh          :call <SNR>92_ToggleHidden()<CR>
+n  ,vyi          :call <SNR>92_ToggleIgnoreCase()<CR>
+n  ,vyd          :call <SNR>92_ToggleBufferDirectories()<CR>
+n  ,vyr          :call <SNR>92_ToggleRecursion()<CR>
+n  ,vyc          :call <SNR>92_ToggleCommand()<CR>
+n  ,vyx          :call <SNR>92_SetFilesToExclude()<CR>
+n  ,vyu          :call <SNR>92_ActivateUser()<CR>
+n  ,vyt          :call <SNR>92_ActivateTracked()<CR>
+n  ,vyb          :call <SNR>92_ActivateBuffers()<CR>
+n  ,vya          :call <SNR>92_ActivateAll()<CR>
+v  ,vR           <Plug>EgMapReplaceSelection_R
+no ,vR           <Plug>EgMapReplaceCurrentWord_R
+v  ,vr           <Plug>EgMapReplaceSelection_r
+no ,vr           <Plug>EgMapReplaceCurrentWord_r
+v  ,vA           <Plug>EgMapGrepSelection_A
+no ,vA           <Plug>EgMapGrepCurrentWord_A
+v  ,va           <Plug>EgMapGrepSelection_a
+no ,va           <Plug>EgMapGrepCurrentWord_a
+v  ,vV           <Plug>EgMapGrepSelection_V
+no ,vV           <Plug>EgMapGrepCurrentWord_V
+v  ,vv           <Plug>EgMapGrepSelection_v
+no ,vv           <Plug>EgMapGrepCurrentWord_v
+   ,vo           <Plug>EgMapGrepOptions
+n  ,ig           <Plug>IndentGuidesToggle
+x  ,ms         * "my:TxSend(@m)<CR>
+n  ,mt         * :TxSetRunCmd<CR>
+n  ,ms         * :TxSend<CR>
+n  ,mr         * :TxRun<CR>
+n  ,mq         * :TxKill<CR>
+n  ,mp         * :TxSetPane<CR>
+n  ,mn         * :TxCreate<CR>
+n  ,mc         * :TxClear<CR>
+n  ,mb         * :TxSigInt<CR>
+x  ,Nr           <Plug>NrrwrgnBangDo
+x  ,nr           <Plug>NrrwrgnDo
+n  ,rs         * :Dispatch bundle exec rspec<CR>
+n  ,a          * :Ack<Space>
+n  ,rr         * :wincmd w | edit | wincmd p<CR>
+n  ,rw         * :%s/\s\+$//e<CR>:noh<CR>
+n  ,er         * :Errors<CR>
+n  ,f          * :CtrlPBuffer<CR>
+n  ,md         * :%! /usr/local/bin/markdown --html4tags <CR>
+   ,n          * :call RenameFile()<CR>
+v  ,st         * :sort<CR>
+   ,y          * "+y
+   ,p          * "+p
+n  ,,          * <C-^>
+n  ,d          * :Bdelete<CR>
+n  ,cu           <Plug>CommentaryUndo
+n  ,c<Space>     <Plug>CommentaryLine
+n  ,c            <Plug>Commentary
+x  ,c            <Plug>Commentary
+n  ,rb         * :RainbowParenthesesToggle<CR>
+n  ,wr         * :setl nowrap!<CR>:set wrap?<CR>
+n  ,l          * :setl nolist!<CR>:set list?<CR>
+   ,sn         * :SyntasticToggleMode<CR>
+n  ,tr         * :NERDTreeToggle<CR>
+   ,pp         * :set paste!<CR>:set paste?<CR>
+   ,sp         * :setlocal spell!<CR>:setlocal spell?<CR>
+   ,te         * :tabclose<CR>
+   ,to         * :tabonly<CR>
+   ,tn           :tabnew<CR>
+n  ,h          * <C-W>s<C-W>j
+n  ,v          * <C-W>v<C-W>l<C-W>L
+v  /           * /\v
+n  /           * /\v
+n  <p          * :call <SNR>91_putline(']p')<CR><']
+n  <P          * :call <SNR>91_putline('[p')<CR><']
+v  <           * <gv
+n  =p          * :call <SNR>91_putline(']p')<CR>=']
+n  =P          * :call <SNR>91_putline('[p')<CR>=']
+n  >p          * :call <SNR>91_putline(']p')<CR>>']
+n  >P          * :call <SNR>91_putline('[p')<CR>>']
+v  >           * >gv
+x  S             <Plug>VSurround
+n  [xx           <Plug>unimpaired_line_xml_encode
+x  [x            <Plug>unimpaired_xml_encode
+n  [x            <Plug>unimpaired_xml_encode
+n  [uu           <Plug>unimpaired_line_url_encode
+x  [u            <Plug>unimpaired_url_encode
+n  [u            <Plug>unimpaired_url_encode
+n  [yy           <Plug>unimpaired_line_string_encode
+x  [y            <Plug>unimpaired_string_encode
+n  [y            <Plug>unimpaired_string_encode
+n  [p            <Plug>unimpairedPutAbove
+n  [ox         * :set cursorline cursorcolumn<CR>
+n  [ow         * :set wrap<CR>
+n  [os         * :set spell<CR>
+n  [or         * :set relativenumber<CR>
+n  [on         * :set number<CR>
+n  [ol         * :set list<CR>
+n  [oi         * :set ignorecase<CR>
+n  [oh         * :set hlsearch<CR>
+n  [od         * :diffthis<CR>
+n  [ou         * :set cursorcolumn<CR>
+n  [oc         * :set cursorline<CR>
+x  [e            <Plug>unimpairedMoveSelectionUp
+n  [e            <Plug>unimpairedMoveUp
+n  [<Space>      <Plug>unimpairedBlankUp
+o  [n            <Plug>unimpairedContextPrevious
+n  [n            <Plug>unimpairedContextPrevious
+n  [o            <Plug>unimpairedOPrevious
+n  [f            <Plug>unimpairedDirectoryPrevious
+n  [T            <Plug>unimpairedTFirst
+n  [t            <Plug>unimpairedTPrevious
+n  [<C-Q>        <Plug>unimpairedQPFile
+n  [Q            <Plug>unimpairedQFirst
+n  [q            <Plug>unimpairedQPrevious
+n  [<C-L>        <Plug>unimpairedLPFile
+n  [L            <Plug>unimpairedLFirst
+n  [l            <Plug>unimpairedLPrevious
+n  [B            <Plug>unimpairedBFirst
+n  [b            <Plug>unimpairedBPrevious
+n  [A            <Plug>unimpairedAFirst
+n  [a            <Plug>unimpairedAPrevious
+n  \\u           <Plug>CommentaryUndo
+n  \\\           <Plug>CommentaryLine
+n  \\            <Plug>Commentary
+x  \\            <Plug>Commentary
+n  ]xx           <Plug>unimpaired_line_xml_decode
+x  ]x            <Plug>unimpaired_xml_decode
+n  ]x            <Plug>unimpaired_xml_decode
+n  ]uu           <Plug>unimpaired_line_url_decode
+x  ]u            <Plug>unimpaired_url_decode
+n  ]u            <Plug>unimpaired_url_decode
+n  ]yy           <Plug>unimpaired_line_string_decode
+x  ]y            <Plug>unimpaired_string_decode
+n  ]y            <Plug>unimpaired_string_decode
+n  ]p            <Plug>unimpairedPutBelow
+n  ]ox         * :set nocursorline nocursorcolumn<CR>
+n  ]ow         * :set nowrap<CR>
+n  ]os         * :set nospell<CR>
+n  ]or         * :set norelativenumber<CR>
+n  ]on         * :set nonumber<CR>
+n  ]ol         * :set nolist<CR>
+n  ]oi         * :set noignorecase<CR>
+n  ]oh         * :set nohlsearch<CR>
+n  ]od         * :diffoff<CR>
+n  ]ou         * :set nocursorcolumn<CR>
+n  ]oc         * :set nocursorline<CR>
+x  ]e            <Plug>unimpairedMoveSelectionDown
+n  ]e            <Plug>unimpairedMoveDown
+n  ]<Space>      <Plug>unimpairedBlankDown
+o  ]n            <Plug>unimpairedContextNext
+n  ]n            <Plug>unimpairedContextNext
+n  ]o            <Plug>unimpairedONext
+n  ]f            <Plug>unimpairedDirectoryNext
+n  ]T            <Plug>unimpairedTLast
+n  ]t            <Plug>unimpairedTNext
+n  ]<C-Q>        <Plug>unimpairedQNFile
+n  ]Q            <Plug>unimpairedQLast
+n  ]q            <Plug>unimpairedQNext
+n  ]<C-L>        <Plug>unimpairedLNFile
+n  ]L            <Plug>unimpairedLLast
+n  ]l            <Plug>unimpairedLNext
+n  ]B            <Plug>unimpairedBLast
+n  ]b            <Plug>unimpairedBNext
+n  ]A            <Plug>unimpairedALast
+n  ]a            <Plug>unimpairedANext
+x  a           * <Esc>:<C-U>call TextObjectify(visualmode(),'a')<CR>
+o  a           * :<C-U>call TextObjectify(v:operator,'a')<CR>
+n  cox         * :set <C-R>=&cursorline && &cursorcolumn ? 'nocursorline nocursorcolumn' : 'cursorline cursorcolumn'<CR><CR>
+n  cow         * :set <C-R>=<SNR>91_toggle("wrap")<CR><CR>
+n  cos         * :set <C-R>=<SNR>91_toggle("spell")<CR><CR>
+n  cor         * :set <C-R>=<SNR>91_toggle("relativenumber")<CR><CR>
+n  con         * :set <C-R>=<SNR>91_toggle("number")<CR><CR>
+n  col         * :set <C-R>=<SNR>91_toggle("list")<CR><CR>
+n  coi         * :set <C-R>=<SNR>91_toggle("ignorecase")<CR><CR>
+n  coh         * :set <C-R>=<SNR>91_toggle("hlsearch")<CR><CR>
+n  cod         * :<C-R>=&diff ? 'diffoff' : 'diffthis'<CR><CR>
+n  cou         * :set <C-R>=<SNR>91_toggle("cursorcolumn")<CR><CR>
+n  coc         * :set <C-R>=<SNR>91_toggle("cursorline")<CR><CR>
+n  cs            <Plug>Csurround
+n  ds            <Plug>Dsurround
+n  gx            <Plug>NetrwBrowseX
+x  gS            <Plug>VgSurround
+x  g!            <Plug>ScripteaseFilter
+n  g!!           <Plug>ScripteaseFilter_
+n  g!            <Plug>ScripteaseFilter
+n  gcu           <Plug>CommentaryUndo
+n  gcc           <Plug>CommentaryLine
+n  gc            <Plug>Commentary
+x  gc            <Plug>Commentary
+n  ga          & :<C-U>echo <SNR>82_info(matchstr(getline('.')[col('.')-1:-1],'.'))<CR>
+x  i           * <Esc>:<C-U>call TextObjectify(visualmode(),'i')<CR>
+o  i           * :<C-U>call TextObjectify(v:operator,'i')<CR>
+v  j           * gj
+n  j           * gj
+v  k           * gk
+n  k           * gk
+n  ygI         * :call <SNR>91_setup_paste()<CR>gI
+n  ygi         * :call <SNR>91_setup_paste()<CR>gi
+n  yI          * :call <SNR>91_setup_paste()<CR>I
+n  yA          * :call <SNR>91_setup_paste()<CR>A
+n  yO          * :call <SNR>91_setup_paste()<CR>O
+n  yo          * :call <SNR>91_setup_paste()<CR>o
+n  yP          * :call <SNR>91_setup_paste()<CR>i
+n  yp          * :call <SNR>91_setup_paste()<CR>a
+n  ySS           <Plug>YSsurround
+n  ySs           <Plug>YSsurround
+n  yss           <Plug>Yssurround
+n  yS            <Plug>YSurround
+n  ys            <Plug>Ysurround
+n  zS            <Plug>ScripteaseSynnames
+n  <Plug>NetrwBrowseX * :call netrw#NetrwBrowseX(expand("<cWORD>"),0)<CR>
+v  <Plug>EgMapReplaceSelection_R & y:call <SNR>92_ReplaceSelection(1)<CR>
+n  <Plug>EgMapReplaceCurrentWord_R & :call <SNR>92_ReplaceCurrentWord(1)<CR>
+v  <Plug>EgMapReplaceSelection_r & y:call <SNR>92_ReplaceSelection(0)<CR>
+n  <Plug>EgMapReplaceCurrentWord_r & :call <SNR>92_ReplaceCurrentWord(0)<CR>
+v  <Plug>EgMapGrepSelection_A & y:call <SNR>92_GrepSelection("add", 1)<CR>
+n  <Plug>EgMapGrepCurrentWord_A & :call <SNR>92_GrepCurrentWord("add", 1)<CR>
+v  <Plug>EgMapGrepSelection_a & y:call <SNR>92_GrepSelection("add", 0)<CR>
+n  <Plug>EgMapGrepCurrentWord_a & :call <SNR>92_GrepCurrentWord("add", 0)<CR>
+v  <Plug>EgMapGrepSelection_V & y:call <SNR>92_GrepSelection("", 1)<CR>
+n  <Plug>EgMapGrepCurrentWord_V & :call <SNR>92_GrepCurrentWord("", 1)<CR>
+v  <Plug>EgMapGrepSelection_v & y:call <SNR>92_GrepSelection("", 0)<CR>
+n  <Plug>EgMapGrepCurrentWord_v & :call <SNR>92_GrepCurrentWord("", 0)<CR>
+n  <Plug>EgMapGrepOptions & :call <SNR>92_GrepOptions()<CR>
+n  <Plug>unimpaired_line_xml_decode * :<C-U>call <SNR>91_Transform("xml_decode",v:count1)<CR>
+x  <Plug>unimpaired_xml_decode * :<C-U>call <SNR>91_Transform("xml_decode",visualmode())<CR>
+n  <Plug>unimpaired_xml_decode * :<C-U>call <SNR>91_TransformSetup("xml_decode")<CR>g@
+n  <Plug>unimpaired_line_xml_encode * :<C-U>call <SNR>91_Transform("xml_encode",v:count1)<CR>
+x  <Plug>unimpaired_xml_encode * :<C-U>call <SNR>91_Transform("xml_encode",visualmode())<CR>
+n  <Plug>unimpaired_xml_encode * :<C-U>call <SNR>91_TransformSetup("xml_encode")<CR>g@
+n  <Plug>unimpaired_line_url_decode * :<C-U>call <SNR>91_Transform("url_decode",v:count1)<CR>
+x  <Plug>unimpaired_url_decode * :<C-U>call <SNR>91_Transform("url_decode",visualmode())<CR>
+n  <Plug>unimpaired_url_decode * :<C-U>call <SNR>91_TransformSetup("url_decode")<CR>g@
+n  <Plug>unimpaired_line_url_encode * :<C-U>call <SNR>91_Transform("url_encode",v:count1)<CR>
+x  <Plug>unimpaired_url_encode * :<C-U>call <SNR>91_Transform("url_encode",visualmode())<CR>
+n  <Plug>unimpaired_url_encode * :<C-U>call <SNR>91_TransformSetup("url_encode")<CR>g@
+n  <Plug>unimpaired_line_string_decode * :<C-U>call <SNR>91_Transform("string_decode",v:count1)<CR>
+x  <Plug>unimpaired_string_decode * :<C-U>call <SNR>91_Transform("string_decode",visualmode())<CR>
+n  <Plug>unimpaired_string_decode * :<C-U>call <SNR>91_TransformSetup("string_decode")<CR>g@
+n  <Plug>unimpaired_line_string_encode * :<C-U>call <SNR>91_Transform("string_encode",v:count1)<CR>
+x  <Plug>unimpaired_string_encode * :<C-U>call <SNR>91_Transform("string_encode",visualmode())<CR>
+n  <Plug>unimpaired_string_encode * :<C-U>call <SNR>91_TransformSetup("string_encode")<CR>g@
+n  <Plug>unimpairedPutBelow * :call <SNR>91_putline(']p')<CR>
+n  <Plug>unimpairedPutAbove * :call <SNR>91_putline('[p')<CR>
+n  <Plug>unimpairedPaste * :call <SNR>91_setup_paste()<CR>
+   <Plug>unimpairedMoveSelectionDown * :<C-U>call <SNR>91_MoveSelectionDown(v:count1)<CR>
+   <Plug>unimpairedMoveSelectionUp * :<C-U>call <SNR>91_MoveSelectionUp(v:count1)<CR>
+n  <Plug>unimpairedMoveDown * :<C-U>call <SNR>91_Move('+',v:count1,'Down')<CR>
+n  <Plug>unimpairedMoveUp * :<C-U>call <SNR>91_Move('--',v:count1,'Up')<CR>
+n  <Plug>unimpairedBlankDown * :<C-U>call <SNR>91_BlankDown(v:count1)<CR>
+n  <Plug>unimpairedBlankUp * :<C-U>call <SNR>91_BlankUp(v:count1)<CR>
+o  <Plug>unimpairedContextNext * :call <SNR>91_ContextMotion(0)<CR>
+o  <Plug>unimpairedContextPrevious * :call <SNR>91_ContextMotion(1)<CR>
+n  <Plug>unimpairedContextNext * :call <SNR>91_Context(0)<CR>
+n  <Plug>unimpairedContextPrevious * :call <SNR>91_Context(1)<CR>
+n  <Plug>unimpairedOPrevious   <Plug>unimpairedDirectoryPrevious:echohl WarningMSG|echo "[o is deprecated. Use [f"|echohl NONE<CR>
+n  <Plug>unimpairedONext   <Plug>unimpairedDirectoryNext:echohl WarningMSG|echo "]o is deprecated. Use ]f"|echohl NONE<CR>
+n  <Plug>unimpairedDirectoryPrevious * :<C-U>edit <C-R>=<SNR>91_fnameescape(<SNR>91_FileByOffset(-v:count1))<CR><CR>
+n  <Plug>unimpairedDirectoryNext * :<C-U>edit <C-R>=<SNR>91_fnameescape(<SNR>91_FileByOffset(v:count1))<CR><CR>
+n  <Plug>unimpairedTLast * :<C-U>exe "".(v:count ? v:count : "")."tlast"<CR>
+n  <Plug>unimpairedTFirst * :<C-U>exe "".(v:count ? v:count : "")."tfirst"<CR>
+n  <Plug>unimpairedTNext * :<C-U>exe "".(v:count ? v:count : "")."tnext"<CR>
+n  <Plug>unimpairedTPrevious * :<C-U>exe "".(v:count ? v:count : "")."tprevious"<CR>
+n  <Plug>unimpairedQNFile * :<C-U>exe "".(v:count ? v:count : "")."cnfile"<CR>
+n  <Plug>unimpairedQPFile * :<C-U>exe "".(v:count ? v:count : "")."cpfile"<CR>
+n  <Plug>unimpairedQLast * :<C-U>exe "".(v:count ? v:count : "")."clast"<CR>
+n  <Plug>unimpairedQFirst * :<C-U>exe "".(v:count ? v:count : "")."cfirst"<CR>
+n  <Plug>unimpairedQNext * :<C-U>exe "".(v:count ? v:count : "")."cnext"<CR>
+n  <Plug>unimpairedQPrevious * :<C-U>exe "".(v:count ? v:count : "")."cprevious"<CR>
+n  <Plug>unimpairedLNFile * :<C-U>exe "".(v:count ? v:count : "")."lnfile"<CR>
+n  <Plug>unimpairedLPFile * :<C-U>exe "".(v:count ? v:count : "")."lpfile"<CR>
+n  <Plug>unimpairedLLast * :<C-U>exe "".(v:count ? v:count : "")."llast"<CR>
+n  <Plug>unimpairedLFirst * :<C-U>exe "".(v:count ? v:count : "")."lfirst"<CR>
+n  <Plug>unimpairedLNext * :<C-U>exe "".(v:count ? v:count : "")."lnext"<CR>
+n  <Plug>unimpairedLPrevious * :<C-U>exe "".(v:count ? v:count : "")."lprevious"<CR>
+n  <Plug>unimpairedBLast * :<C-U>exe "".(v:count ? v:count : "")."blast"<CR>
+n  <Plug>unimpairedBFirst * :<C-U>exe "".(v:count ? v:count : "")."bfirst"<CR>
+n  <Plug>unimpairedBNext * :<C-U>exe "".(v:count ? v:count : "")."bnext"<CR>
+n  <Plug>unimpairedBPrevious * :<C-U>exe "".(v:count ? v:count : "")."bprevious"<CR>
+n  <Plug>unimpairedALast * :<C-U>exe "".(v:count ? v:count : "")."last"<CR>
+n  <Plug>unimpairedAFirst * :<C-U>exe "".(v:count ? v:count : "")."first"<CR>
+n  <Plug>unimpairedANext * :<C-U>exe "".(v:count ? v:count : "")."next"<CR>
+n  <Plug>unimpairedAPrevious * :<C-U>exe "".(v:count ? v:count : "")."previous"<CR>
+v  <Plug>VgSurround * :<C-U>call <SNR>90_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+v  <Plug>VSurround * :<C-U>call <SNR>90_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+n  <Plug>YSurround * :<C-U>set opfunc=<SNR>90_opfunc2<CR>g@
+n  <Plug>Ysurround * :<C-U>set opfunc=<SNR>90_opfunc<CR>g@
+n  <Plug>YSsurround * :<C-U>call <SNR>90_opfunc2(v:count1)<CR>
+n  <Plug>Yssurround * :<C-U>call <SNR>90_opfunc(v:count1)<CR>
+n  <Plug>Csurround * :<C-U>call <SNR>90_changesurround()<CR>
+n  <Plug>Dsurround * :<C-U>call <SNR>90_dosurround(<SNR>90_inputtarget())<CR>
+n  <Plug>SurroundRepeat * .
+n  <Plug>ScripteaseSynnames * :<C-U>exe <SNR>89_zS(v:count)<CR>
+x  <Plug>ScripteaseFilter * :<C-U>call <SNR>89_filterop(visualmode())<CR>
+n  <Plug>ScripteaseFilter * :<C-U>set opfunc=<SNR>89_filterop<CR>g@
+n  <Plug>CommentaryUndo * :<C-U>call <SNR>83_undo()<CR>
+n  <Plug>CommentaryLine * :<C-U>set opfunc=<SNR>83_go|exe 'norm! 'v:count1.'g@_'<CR>
+n  <Plug>Commentary * :<C-U>set opfunc=<SNR>83_go<CR>g@
+x  <Plug>Commentary * :<C-U>call <SNR>83_go(line("'<"),line("'>"))<CR>
+n  <Plug>IndentGuidesDisable & :IndentGuidesDisable<CR>
+n  <Plug>IndentGuidesEnable & :IndentGuidesEnable<CR>
+n  <Plug>IndentGuidesToggle & :IndentGuidesToggle<CR>
+x  <SNR>38_VisualNrrwBang * :<C-U>call nrrwrgn#NrrwRgn(visualmode(),'!')<CR>
+x  <SNR>38_VisualNrrwRgn * :<C-U>call nrrwrgn#NrrwRgn(visualmode(),'')<CR>
+x  <Plug>NrrwrgnBangDo & <SNR>38_VisualNrrwBang
+x  <Plug>NrrwrgnDo & <SNR>38_VisualNrrwRgn
+n  <F10>       * :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+n  <F8>        * :TagbarToggle<CR>
+v  <BS>          "-d
+v  <D-x>         "*d
+v  <D-c>         "*y
+v  <D-v>         "-d"*P
+n  <D-v>         "*P

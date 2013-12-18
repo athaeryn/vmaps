@@ -3,7 +3,7 @@ require "vmaps/mapping"
 module Vmaps
   class Parser
     def initialize source
-      @source = source
+      @source = source.split("\n")
     end
 
     def parse_to_mappings

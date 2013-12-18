@@ -1,24 +1,27 @@
 # Vmaps
 
-TODO: Write a gem description
+This is a pair of tools for exploring your vim mappings:
+`vmaps_dump` and `vmaps_json`.
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'vmaps'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Or install it yourself as: (this gem is not published yet so this won't work)
 
     $ gem install vmaps
 
+
 ## Usage
 
-TODO: Write usage instructions here
+`vmaps_dump` sends the result of the vim command `:verbose map` to STDOUT.
+`vmaps_json` converts this result into json. Isn't that all cute and Unix-y?
+
+You probably just want to do this:
+
+    $ vmaps_dump | vmaps_json > mappings.json
+
+You'll end with a bunch of json data, which you can use however you'd like.
+
 
 ## Contributing
 

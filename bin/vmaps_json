@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "vmaps"
+
+Vmaps::Main.new(ARGF.read).output_json()
