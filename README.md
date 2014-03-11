@@ -12,13 +12,13 @@ This is a pair of tools for exploring your vim mappings:
 ## Usage
 
 `vmaps_dump` sends the result of the vim command `:verbose map` to STDOUT.
-`vmaps_json` converts this result into json. Isn't that all cute and Unix-y?
+`vmaps_json` converts this result into json.
 
 You probably just want to do this:
 
     $ vmaps_dump | vmaps_json > mappings.json
 
-You'll end with a bunch of json data, which you can use however you'd like.
+You'll end up with a bunch of json data, which you can use however you'd like.
 
 
 ## Contributing
